@@ -1,0 +1,12 @@
+services:
+  rust:
+    build: .
+    container_name: rust_api
+    ports:
+      - 8000:3000
+    restart: always
+    networks:
+      - api
+
+networks:
+  api:
