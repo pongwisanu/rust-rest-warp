@@ -12,7 +12,7 @@ cargo build
 ```
 
 ```
-cargo run
+RUST_LOG=API cargo run
 ```
 
 

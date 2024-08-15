@@ -7,4 +7,5 @@ pub fn routes(db: Db) -> impl Filter<Extract = impl warp::Reply, Error = warp::R
     let customer_routes = services::customer::customer_routes(db);
 
     customer_routes
+        .with(warp::log("API"))
 }
